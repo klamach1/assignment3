@@ -1,8 +1,18 @@
 //
 // Created by Chris Lawrence on 2/19/18.
+// This class represents a String object.  The class provides
+// functions for assigning the char array value of another String object
+// or a char array to an existing instance, replacing the previous value.
+// The class also provides functions for obtaining a pointer to the character data,
+// the length of the character data (omitting the null terminator), the position of an
+// input character in the character data, and whether an input String object has the same
+// character value as the instance.
 //
+// This class centralizes much of the character value assignment into
+// the private setValue function
 
 // -- TString.h header file --
+
 
 #ifndef _TSTRING_H    // only include once in a compilation unit
 #define _TSTRING_H
@@ -42,8 +52,11 @@ public:
     
     
 private:
-    int mLength;  // length of char data (not including null char)
-    char *mpText; // pointer to dynamic char array in heap
+    // length of char data (not including null char)
+    int mLength;
+    // pointer to dynamic char array in heap
+    char *mpText;
+    // private function to manage setting the char data to the instance
     void setValue(const char *pText);
 };
 
