@@ -28,6 +28,7 @@
 		682D92D7203B9C35009DDA14 /* TString.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TString.h; sourceTree = "<group>"; };
 		682D92D8203B9C35009DDA14 /* XString2.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = XString2.cpp; sourceTree = "<group>"; };
 		682D92D9203B9C35009DDA14 /* TString.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = TString.cpp; sourceTree = "<group>"; };
+		682D92DE203E57C8009DDA14 /* assignment3 */ = {isa = PBXFileReference; lastKnownFileType = folder; name = assignment3; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +64,7 @@
 				682D92D9203B9C35009DDA14 /* TString.cpp */,
 				682D92D7203B9C35009DDA14 /* TString.h */,
 				682D92D8203B9C35009DDA14 /* XString2.cpp */,
+				682D92DE203E57C8009DDA14 /* assignment3 */,
 			);
 			path = assignment3;
 			sourceTree = "<group>";
