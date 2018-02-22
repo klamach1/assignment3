@@ -7,7 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		682D92D1203B9C04009DDA14 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 682D92D0203B9C04009DDA14 /* main.cpp */; };
+		682D92DA203B9C35009DDA14 /* XString2.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 682D92D8203B9C35009DDA14 /* XString2.cpp */; };
+		682D92DB203B9C35009DDA14 /* TString.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 682D92D9203B9C35009DDA14 /* TString.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -24,7 +25,9 @@
 
 /* Begin PBXFileReference section */
 		682D92CD203B9C04009DDA14 /* assignment3 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = assignment3; sourceTree = BUILT_PRODUCTS_DIR; };
-		682D92D0203B9C04009DDA14 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		682D92D7203B9C35009DDA14 /* TString.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TString.h; sourceTree = "<group>"; };
+		682D92D8203B9C35009DDA14 /* XString2.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = XString2.cpp; sourceTree = "<group>"; };
+		682D92D9203B9C35009DDA14 /* TString.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = TString.cpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,7 +60,9 @@
 		682D92CF203B9C04009DDA14 /* assignment3 */ = {
 			isa = PBXGroup;
 			children = (
-				682D92D0203B9C04009DDA14 /* main.cpp */,
+				682D92D9203B9C35009DDA14 /* TString.cpp */,
+				682D92D7203B9C35009DDA14 /* TString.h */,
+				682D92D8203B9C35009DDA14 /* XString2.cpp */,
 			);
 			path = assignment3;
 			sourceTree = "<group>";
@@ -119,7 +124,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				682D92D1203B9C04009DDA14 /* main.cpp in Sources */,
+				682D92DA203B9C35009DDA14 /* XString2.cpp in Sources */,
+				682D92DB203B9C35009DDA14 /* TString.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
