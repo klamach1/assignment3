@@ -46,7 +46,7 @@ public:
     bool equals(const TString &pTString) const;
     
     // function to check whether the input character exists
-    // in this TString and if so, at what position.  Returns -1
+    // in this TString and if so, at what position first.  Returns -1
     // if char does not exist
     int indexOf(char pChar) const;
     
