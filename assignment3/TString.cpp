@@ -7,8 +7,11 @@
 #include <cstring>
 #include "TString.h"
 
+//ctor
 TString::TString(const char *pText) {
     
+    //init the char pointer to nullptr
+    mpText = nullptr;
     setValue(pText);
     
 }
@@ -16,8 +19,9 @@ TString::TString(const char *pText) {
 // dtor
 TString::~TString() {
     //clean up memory
-    delete mpText;
-    mpText = nullptr;
+
+    resetMpText();
+    
 }
 
 // function to return char data length
@@ -32,15 +36,17 @@ char *TString::asChar() const {
 
 // function to assign char data from TString object
 void TString::assign(const TString &pTString) {
-    this->assign(pTString.asChar());
+    //check for self assignment
+    if (this != &pTString) {
+        setValue(pTString.mpText);
+    }
+    
 }
 
 // function to assign char data from char array pointer
 void TString::assign(const char *pText) {
-    
+    //check for self assignment
     if (pText != mpText) {
-        delete mpText;
-        mpText = nullptr;
         setValue(pText);
     }
     
@@ -74,6 +80,12 @@ int TString::indexOf(char pChar) const {
 // private function to manage the set of the char data
 void TString::setValue(const char *pText) {
     
+    if (mpText != nullptr) {
+        
+        resetMpText();
+
+    }
+
     if (pText == nullptr) {
         mLength = 0;
     } else {
@@ -85,6 +97,13 @@ void TString::setValue(const char *pText) {
     mLength == 0 ? mpText = strcpy(mpText, "\0") : strcpy(mpText, pText);
     
 }
+
+// private function to clear memory
+void TString::resetMpText() {
+    delete mpText;
+    mpText = nullptr;
+}
+
 
 
 

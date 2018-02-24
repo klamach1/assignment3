@@ -292,7 +292,7 @@ int main()
         outstream << endl << "Assigning null pointer to s1 = \"" << s1.asChar() << "\"" << endl;
         s1.assign(static_cast<const char *>(0));
         outstream << "s1 = \"" << s1.asChar() << "\" (length = " << s1.length() << ")" << endl;
-        mp = (s1.equals("")) ? "OK: matches " : "ERROR: doesn't match ";
+        mp = (s1.equals(nullptr)) ? "OK: matches " : "ERROR: doesn't match ";
         outstream << mp << "\"" << emptyString << "\"" << endl;
         mp = (0 == s1.length()) ? "OK: " : "ERROR: ";
         outstream << mp << "length = " << s1.length() << endl;

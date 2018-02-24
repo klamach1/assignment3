@@ -58,6 +58,8 @@ private:
     char *mpText;
     // private function to manage setting the char data to the instance
     void setValue(const char *pText);
+    // private function to clear memory
+    void resetMpText();
 };
 
 #endif   // _TSTRING_H
