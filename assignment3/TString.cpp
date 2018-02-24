@@ -3,6 +3,7 @@
 //
 
 // -- TString.cpp source file --
+// TString implementation
 
 #include <cstring>
 #include "TString.h"
