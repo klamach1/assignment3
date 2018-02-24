@@ -63,11 +63,13 @@ bool TString::equals(const TString &pTString) const {
 // exists in the TString char data
 int TString::indexOf(char pChar) const {
     
+    // default to no match
     int index = -1;
     
     int counter = 0;
     
-    while (counter<=mLength) {
+    //loop until the end or we find a match
+    while (counter<=mLength && index == -1) {
         
         mpText[counter] == pChar ? index = counter : index;
         counter++;
@@ -80,20 +82,22 @@ int TString::indexOf(char pChar) const {
 // private function to manage the set of the char data
 void TString::setValue(const char *pText) {
     
+    //if there is a value set, clear it
     if (mpText != nullptr) {
-        
         resetMpText();
-
     }
 
+    //if the input is null, set the length to 0, otherwise use strlen to set
     if (pText == nullptr) {
         mLength = 0;
     } else {
         mLength = static_cast<int>(strlen(pText));
     }
     
+    // make sure to add 1 for the null terminator
     mpText = new char[mLength+1];
     
+    // a zero length string should be set to the null terminator
     mLength == 0 ? mpText = strcpy(mpText, "\0") : strcpy(mpText, pText);
     
 }

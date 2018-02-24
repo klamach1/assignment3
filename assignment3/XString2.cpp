@@ -314,6 +314,9 @@ int main()
         pos = s0.indexOf('o');
         mp = (11 == pos) ? "OK: 'o' found " : "ERROR: 'o' not found ";
         outstream << mp << " - indexOf = " << pos << endl;
+        pos = s0.indexOf('l');
+        mp = (9 == pos) ? "OK: 'l' found " : "ERROR: 'l' not found ";
+        outstream << mp << " - indexOf = " << pos << endl;
         pos = s0.indexOf('z');
         mp = (-1 == pos) ? "OK: 'z' not found " : "ERROR: 'z' should return -1 ";
         outstream << mp << " - indexOf = " << pos << endl;
